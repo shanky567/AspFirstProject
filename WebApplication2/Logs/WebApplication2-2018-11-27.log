@@ -1,0 +1,11 @@
+time,message,url,referer,user-agent,level
+2018-11-27 10:52:51.8417,Can't find a connection string with the name '',/Employee/Create,http://localhost:2223/Employee/Create,"Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.102 Safari/537.36",Error
+2018-11-27 10:52:51.8587,Can't find a connection string with the name '',/Employee/Create,http://localhost:2223/Employee/Create,"Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.102 Safari/537.36",Error
+2018-11-27 11:13:14.0176,Can't find a connection string with the name '',/Employee/Create,http://localhost:2223/Employee/Create,"Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.102 Safari/537.36",Error
+2018-11-27 11:22:31.7195,Invalid column name 'Gender'.,/Employee/Create,http://localhost:2223/Employee/Create,"Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.102 Safari/537.36",Error
+2018-11-27 11:41:06.7023,"Violation of PRIMARY KEY constraint 'PK_Employee'. Cannot insert duplicate key in object 'dbo.Employee'. The duplicate key value is (0).
+The statement has been terminated.",/Employee/Create,http://localhost:2223/Employee/Create,"Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.102 Safari/537.36",Error
+2018-11-27 11:44:44.1307,"Violation of PRIMARY KEY constraint 'PK_Employee'. Cannot insert duplicate key in object 'dbo.Employee'. The duplicate key value is (0).
+The statement has been terminated.",/Employee/Create,http://localhost:2223/Employee/Create,"Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.102 Safari/537.36",Error
+2018-11-27 11:46:13.1908,"Cannot insert the value NULL into column 'Id', table 'Test.dbo.Employee'; column does not allow nulls. INSERT fails.
+The statement has been terminated.",/Employee/Create,http://localhost:2223/Employee/Create,"Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.102 Safari/537.36",Error

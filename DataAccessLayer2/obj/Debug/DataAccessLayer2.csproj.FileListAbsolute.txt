@@ -1,0 +1,6 @@
+C:\Users\dev1\Documents\Visual Studio 2015\Projects\WebApplication2\DataAccessLayer2\bin\Debug\DataAccessLayer2.dll
+C:\Users\dev1\Documents\Visual Studio 2015\Projects\WebApplication2\DataAccessLayer2\bin\Debug\DataAccessLayer2.pdb
+C:\Users\dev1\Documents\Visual Studio 2015\Projects\WebApplication2\DataAccessLayer2\obj\Debug\DataAccessLayer2.csprojResolveAssemblyReference.cache
+C:\Users\dev1\Documents\Visual Studio 2015\Projects\WebApplication2\DataAccessLayer2\obj\Debug\DataAccessLayer2.dll
+C:\Users\dev1\Documents\Visual Studio 2015\Projects\WebApplication2\DataAccessLayer2\obj\Debug\DataAccessLayer2.pdb
+C:\Users\dev1\Documents\Visual Studio 2015\Projects\WebApplication2\DataAccessLayer2\bin\Debug\NextPage.DatabaseUtil.dll

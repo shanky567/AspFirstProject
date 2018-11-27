@@ -1,0 +1,93 @@
+﻿@using WebApplication2.Models
+@model Review
+@{
+    ViewBag.Title = "Index";
+    Layout = null;
+}
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Employee!!</title>
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+         
+    <style>
+        table {
+    text-align: center;
+    
+    position: relative;
+    left: 41%;
+}
+        body{
+            text-align:center;
+        }
+        td {
+ 
+    padding: 11px;
+}
+    </style>
+</head>
+
+<body>
+
+    <header class="jumbotron">This is Employee Index</header>
+
+
+ 
+<h2>Employee Details</h2>
+
+
+    <table>
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Name</th>
+               
+                <th>Language</th>
+                <th>Country</th>
+
+
+            </tr>
+        </thead>
+
+        <tbody>
+
+  @foreach (var item in Model.EmployeeList)
+  {
+    @Html.HiddenFor(x => x.EmployeeInfo.Id);
+    <tr>
+        <td>@item.Id</td>
+        <td>@item.Name</td>
+        <td>@item.Language</td>
+        <td>@item.Country</td>
+        <td><a href="" class="btn btn-warning">Edit</a></td>
+        <td><a class="btn btn-danger">Delete</a></td>
+       
+       
+
+    </tr>
+     
+
+
+  }
+           
+        </tbody>
+        
+
+    </table>
+
+    
+
+
+   <div>
+     
+       <a class="btn btn-primary" href="@Url.Action("Create","Employee")">CREATE NEW EMPLOYEE</a>
+
+   </div>
+
+</body>
+
+</html>
+
+
