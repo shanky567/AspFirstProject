@@ -1,0 +1,2 @@
+time,message,url,referer,user-agent,level
+2018-12-04 12:01:23.4040,Object reference not set to an instance of an object.,/Employee/Create,,"Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36",Error

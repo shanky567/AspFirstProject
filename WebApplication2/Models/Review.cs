@@ -11,7 +11,9 @@ namespace WebApplication2.Models
     {
 
         public Employees.Employee EmployeeInfo { get; set; }
+        public Salarys.Salary SalaryInfo { get; set; }
         public List<Employees.Employee> EmployeeList { get; set; }
+        public Common.CommonObjects Headings { get; set; }
 
         //public System.Web.Mvc.SelectList Employee { get; set; }
     }

@@ -5,7 +5,7 @@
 }
 
 
-<h2>Edit</h2>
+<h2>@Model.Headings.Heading</h2>
 <h4>Employees</h4>
 <hr />
 <div class="row">
@@ -14,6 +14,7 @@
 
         {
              @Html.HiddenFor(x => x.EmployeeInfo.Id);
+             @Html.HiddenFor(x => x.SalaryInfo.Id);
 
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
                 <div class="form-group">
@@ -33,7 +34,19 @@
                     <span asp-validation-for="City" class="text-danger"></span>
                 </div>
                 <div class="form-group">
-                    <button type="submit" class="btn btn-default">Add Employee</button>
+                    @*<label asp-for="City" class="control-label">Country</label>
+                        <input asp-for="City" class="form-control" />*@
+                    <label>Salary</label>@Html.TextBoxFor(m => m.SalaryInfo.INR, new { @type = "number", @class = "form-control", required = "required" })
+                    <span asp-validation-for="City" class="text-danger"></span>
+                </div>
+                <div class="uploa_btn">
+
+                    <input type="file" name="file" id="file" class="form-control photo-browse" />
+
+                    <span style="cursor:pointer;" class="btn_upload">Upload</span>
+                </div>
+                <div class="form-group">
+                    <button type="submit" class="btn btn-default">Edit Employee</button>
                 </div>
 
         }

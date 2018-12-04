@@ -1,0 +1,135 @@
+﻿@using WebApplication2.Models
+@model Review
+@{
+    ViewBag.Title = "Details";
+}
+   
+
+ <!DOCTYPE html>
+    <html>
+    <head>
+        <title>Employee List</title>
+        <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+        <style>
+           
+
+            body {
+                text-align: center;
+            }
+
+            td {
+                padding: 11px;
+            }
+
+            tr {
+                border: 2px solid black;
+            }
+
+            td {
+                border-left: 2px solid black;
+            }
+
+            th {
+                text-align: left;
+                border: 2px solid black;
+                text-align: center;
+            }
+
+            a.btn.btn-primary {
+                padding: 13px;
+                margin-top: 24px;
+            }
+
+            table {
+    width: 100%;
+    background: #eee;
+}
+        </style>
+       
+    </head>
+
+    <body>
+
+  
+
+
+        <div class="container">
+
+            <h2>Employee Details</h2>
+
+           
+
+@if (Model.EmployeeInfo != null)
+{
+
+    @Html.HiddenFor(x => x.EmployeeInfo.Id);
+
+
+    <div class="jumbotron">
+        <img src="@(Common.Paths.GalleryRoot)@Model.EmployeeInfo.ImageUrl" />
+
+        <a class="btn btn-primary">@Model.EmployeeInfo.ActiveStatus</a>
+
+    </div>
+
+      <table>
+                <thead>
+                    <tr>
+                        <th>Id</th>
+                        <th>Name</th>
+
+                        <th>Language</th>
+                        <th>Country</th>
+                        <th>Salary</th>
+                        
+
+
+                    </tr>
+                </thead>
+
+                <tbody>
+
+                   
+                
+                        <tr>
+                            <td>@Model.EmployeeInfo.Id</td>
+                            <td>@Model.EmployeeInfo.Name</td>
+                            <td>@Model.EmployeeInfo.Language</td>
+                            <td>@Model.EmployeeInfo.Country</td>
+                            @if (Model.SalaryInfo != null)
+                            {
+                                <td>@Model.SalaryInfo.INR</td>
+                            }
+                          
+                            
+                           
+
+                        </tr>
+
+
+
+
+                </tbody>
+
+
+            </table>
+
+
+
+}
+
+            <div>
+
+                <a class="btn btn-primary" href="@Url.Action("Create","Employee")">CREATE NEW EMPLOYEE</a>
+
+            </div>
+        </div>
+
+
+    </body>
+
+</html>
+
+
+
+

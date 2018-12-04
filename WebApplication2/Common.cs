@@ -18,6 +18,8 @@ namespace WebApplication2
 
         public static Employees Employee = new Employees();
 
+        public static Salarys Salary = new Salarys();
+
 
 
         public class Log
@@ -40,6 +42,13 @@ namespace WebApplication2
                 _logger.Info(message);
             }
         }
+
+        public class Paths
+        {
+            public static string GalleryRootFolderName => "Uploads";
+            public static string GalleryRoot => MyRoot + GalleryRootFolderName + "/";
+        }
+
         public static string MyRoot
         {
             get
@@ -48,6 +57,11 @@ namespace WebApplication2
     HttpContext.Current.Request.ApplicationPath.TrimEnd('/') +
     "/";
             }
+        }
+        public class CommonObjects
+        {
+            public string Heading { get; set; }
+           
         }
     }
 

@@ -13,6 +13,7 @@ namespace WebApplication2.Models
         public string Gender { get; set; }
         public string Language { get; set; }
         public string Country { get; set; }
+        public string ImageUrl { get; set; }
 
     }
 }
